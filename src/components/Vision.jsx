@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Vision() {
   return (
     <section id="vision" className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-black via-[var(--gray-900)] to-black relative overflow-hidden">

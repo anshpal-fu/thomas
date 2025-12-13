@@ -1,3 +1,4 @@
+import React from 'react';
 export default function CTA() {
 return (
 <section className="py-20 sm:py-32 px-4 sm:px-6 bg-gradient-to-b from-black via-[var(--gray-900)] to-black relative overflow-hidden">

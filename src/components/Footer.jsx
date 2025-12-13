@@ -1,3 +1,4 @@
+import React from 'react';
 export default function Footer() {
 return (
 <footer className="py-16 sm:py-24 bg-gradient-to-b from-[var(--gray-900)] to-black border-t border-[var(--gold)]/30 relative overflow-hidden">

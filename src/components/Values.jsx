@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Values() {
   const values = [
     { title: 'Integrity', description: 'Operating with honesty and strong moral principles in everything we do', icon: '🛡️' },
