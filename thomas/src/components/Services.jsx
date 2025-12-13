@@ -57,7 +57,7 @@ return (
 <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-tl from-[var(--gold)]/10 to-transparent rounded-full blur-3xl animate-float" style={{animationDelay: '1.5s'}}></div>
 </div>
 
-<div className="max-w-7xl mx-auto px-6 relative z-10">
+<div className="max-w-7xl mx-auto relative z-10">
 <div className="text-center mb-16 sm:mb-20 animate-fadeInUp">
 <h2 className="text-4xl sm:text-5xl md:text-6xl font-black gradient-text mb-4 tracking-tight">
 SERVICE PACKAGES

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-black/95 backdrop-blur-2xl border-b border-[var(--gold)]/20 shadow-2xl shadow-[var(--gold)]/5">
@@ -24,17 +26,17 @@ export default function Navbar() {
 
           {/* Navigation Links & CTA Button */}
           <div className="flex items-center space-x-6 sm:space-x-8">
-            <a href="#services" className="hidden md:block text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 font-medium text-sm uppercase tracking-wider">
+            <Link to="/services" className="hidden md:block text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 font-medium text-sm uppercase tracking-wider">
               Services
-            </a>
+            </Link>
             
-            <a
-              href="#services"
+            <Link
+              to="/services"
               className="group relative px-4 sm:px-8 py-2 sm:py-3 bg-gradient-to-r from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-dark)] text-black font-bold hover:from-[var(--gold)] hover:via-[var(--gold-light)] hover:to-[var(--gold)] transition-all duration-500 uppercase text-xs sm:text-sm tracking-wider shadow-lg hover:shadow-[var(--gold)]/50 overflow-hidden"
             >
               <span className="relative z-10">Book Session</span>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
