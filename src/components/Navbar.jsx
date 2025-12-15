@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTheme } from '../contexts/ThemeContext';
 
 export default function Navbar() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <nav className="fixed top-0 w-full z-50 bg-black/95 backdrop-blur-2xl border-b border-[var(--gold)]/20 shadow-2xl shadow-[var(--gold)]/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,6 +30,12 @@ export default function Navbar() {
 
           {/* Navigation Links & CTA Button */}
           <div className="flex items-center space-x-6 sm:space-x-8">
+            <Link to="/" className="hidden md:block text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 font-medium text-sm uppercase tracking-wider">
+              Home
+            </Link>
+            <Link to="/about" className="hidden md:block text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 font-medium text-sm uppercase tracking-wider">
+              About
+            </Link>
             <Link to="/services" className="hidden md:block text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 font-medium text-sm uppercase tracking-wider">
               Services
             </Link>

@@ -1,8 +1,11 @@
 import React from 'react';
+import { useTheme } from '../contexts/ThemeContext';
 
 export default function Vision() {
+  const { theme } = useTheme();
+  
   return (
-    <section id="vision" className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-black via-[var(--gray-900)] to-black relative overflow-hidden">
+    <section id="vision" className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-black via-[var(--gray-900)] to-black relative overflow-hidden" data-bg-section data-bg-color="#000000">
       {/* Animated Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[var(--gold)]/5 to-transparent rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-[var(--gold)]/5 to-transparent rounded-full blur-3xl animate-float" style={{animationDelay: '1.5s'}}></div>

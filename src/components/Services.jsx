@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTheme } from '../contexts/ThemeContext';
 
 const services = [
 {
@@ -49,10 +50,21 @@ popular: true
 }
 ];
 
+const getServiceId = (title) => {
+  const titleMap = {
+    "1 ON 1 CONSULTING SESSION": "consulting",
+    "PUBLIC → PRIVATE TRANSFIGURATION": "transfiguration",
+    "MASTERY IMMERSION (3 MONTHS)": "mastery"
+  };
+  return titleMap[title] || "consulting";
+};
+
 
 export default function Services() {
-return (
-<section id="services" className="py-20 sm:py-32 px-4 sm:px-6 bg-gradient-to-b from-black via-[var(--gray-900)] to-black relative overflow-hidden">
+  const { theme } = useTheme();
+  
+  return (
+<section id="services" className="py-20 sm:py-32 px-4 sm:px-6 bg-gradient-to-b from-black via-[var(--gray-900)] to-black relative overflow-hidden" data-bg-section data-bg-color="#D4AF37">
 {/* Animated Background */}
 <div className="absolute inset-0">
 <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-[var(--gold)]/10 to-transparent rounded-full blur-3xl animate-float"></div>
@@ -110,9 +122,12 @@ MOST TRANSFORMATIVE
 <p className="text-xs text-gray-500 italic leading-relaxed">{s.purpose}</p>
 </div>
 
-<button className="w-full py-4 bg-gradient-to-r from-black via-[var(--gray-900)] to-black border-2 border-[var(--gold)]/30 text-[var(--gold)] hover:bg-gradient-to-r hover:from-[var(--gold-dark)] hover:via-[var(--gold)] hover:to-[var(--gold-dark)] hover:text-black hover:border-[var(--gold)] transition-all duration-500 font-bold uppercase tracking-wider group-hover:shadow-lg group-hover:shadow-[var(--gold)]/30">
+<a 
+href={`/service/${getServiceId(s.title)}`}
+className="w-full py-4 bg-gradient-to-r from-black via-[var(--gray-900)] to-black border-2 border-[var(--gold)]/30 text-[var(--gold)] hover:bg-gradient-to-r hover:from-[var(--gold-dark)] hover:via-[var(--gold)] hover:to-[var(--gold-dark)] hover:text-black hover:border-[var(--gold)] transition-all duration-500 font-bold uppercase tracking-wider group-hover:shadow-lg group-hover:shadow-[var(--gold)]/30 block text-center"
+>
 Learn More
-</button>
+</a>
 </div>
 
 {/* Hover shine effect */}

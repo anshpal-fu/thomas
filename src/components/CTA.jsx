@@ -1,7 +1,10 @@
 import React from 'react';
+import { useTheme } from '../contexts/ThemeContext';
 export default function CTA() {
-return (
-<section className="py-20 sm:py-32 px-4 sm:px-6 bg-gradient-to-b from-black via-[var(--gray-900)] to-black relative overflow-hidden">
+  const { theme } = useTheme();
+  
+  return (
+<section className="py-20 sm:py-32 px-4 sm:px-6 bg-gradient-to-b from-black via-[var(--gray-900)] to-black relative overflow-hidden" data-bg-section data-bg-color="#000000">
 {/* Animated Background Elements */}
 <div className="absolute inset-0">
 <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-bl from-[var(--gold)]/10 to-transparent rounded-full blur-3xl animate-float"></div>

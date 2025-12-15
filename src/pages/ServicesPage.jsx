@@ -5,14 +5,17 @@ import Footer from '../components/Footer';
 import Services from '../components/Services';
 import CTA from '../components/CTA';
 import ScrollToTop from '../components/ScrollToTop';
+import AlternatingBackground from '../components/AlternatingBackground';
 
 export default function ServicesPage() {
   return (
     <div className="app">
       <Navbar />
       <main className="pt-20">
-        <Services />
-        <CTA />
+        <AlternatingBackground>
+          <Services />
+          <CTA />
+        </AlternatingBackground>
       </main>
       <Footer />
       <ScrollToTop />

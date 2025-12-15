@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTheme } from '../contexts/ThemeContext';
 
 export default function Values() {
+  const { theme } = useTheme();
+  
   const values = [
     { title: 'Integrity', description: 'Operating with honesty and strong moral principles in everything we do', icon: '🛡️' },
     { title: 'Alignment', description: 'Aligning vision, purpose, and action for complete transformation', icon: '🎯' },
@@ -14,7 +17,7 @@ export default function Values() {
   ];
 
   return (
-    <section id="values" className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-black via-[var(--gray-900)] to-black relative overflow-hidden">
+    <section id="values" className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-black via-[var(--gray-900)] to-black relative overflow-hidden" data-bg-section data-bg-color="#D4AF37">
       {/* Background Gradients */}
       <div className="absolute inset-0">
         <div className="absolute top-1/3 left-0 w-96 h-96 bg-gradient-to-r from-[var(--gold)]/10 to-transparent rounded-full blur-3xl animate-float"></div>
