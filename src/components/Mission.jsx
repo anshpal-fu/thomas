@@ -28,12 +28,12 @@ export default function Mission() {
         {/* Main Content */}
         <div className="space-y-8 animate-fadeInUp" style={{animationDelay: '0.2s'}}>
           {/* Opening Statement */}
-          <div className="p-6 sm:p-8 bg-gradient-to-r from-black/90 via-gray-900/80 to-black/90 border-2 border-black/50 rounded-lg hover:border-black/70 transition-all duration-500">
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-200 leading-relaxed mb-4">
-              The mission has always been simple: <span className="bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-400 bg-clip-text text-transparent font-bold">invest in yourself.</span>
+          <div className="p-6 sm:p-8 bg-gradient-to-r from-white via-gray-50 to-gray-100 border-2 border-gray-300 rounded-lg hover:border-gray-400 transition-all duration-500 shadow-lg">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed mb-4">
+              The mission has always been simple: <span className="text-yellow-600 font-bold">invest in yourself.</span>
             </p>
-            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
-              Because when you invest in yourself — when you put your own credits on the line — the exchange hits different. You take it seriously. You show up differently. You become accountable. <span className="text-white font-semibold">You become a doer, not just a dreamer.</span>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
+              Because when you invest in yourself — when you put your own credits on the line — the exchange hits different. You take it seriously. You show up differently. You become accountable. <span className="text-gray-800 font-semibold">You become a doer, not just a dreamer.</span>
             </p>
           </div>
 
@@ -47,12 +47,12 @@ export default function Mission() {
             ].map((text, idx) => (
               <div 
                 key={idx} 
-                className="group p-6 bg-gradient-to-br from-black/90 via-gray-900/85 to-black/90 border border-black/40 rounded-lg hover:border-black/60 transition-all duration-500 animate-fadeInUp"
+                className="group p-6 bg-gradient-to-br from-white via-gray-50 to-gray-100 border border-gray-300 rounded-lg hover:border-gray-400 transition-all duration-500 animate-fadeInUp shadow-lg"
                 style={{animationDelay: `${0.4 + idx * 0.1}s`}}
               >
                 <div className="flex items-start space-x-3">
-                  <span className="text-2xl text-yellow-300 group-hover:scale-125 transition-transform duration-300">▶</span>
-                  <p className="text-lg text-gray-300 group-hover:text-white font-semibold leading-relaxed transition-colors duration-300">
+                  <span className="text-2xl text-yellow-600 group-hover:scale-110 transition-transform duration-300">▶</span>
+                  <p className="text-lg text-gray-700 group-hover:text-gray-900 font-semibold leading-relaxed transition-colors duration-300">
                     {text}
                   </p>
                 </div>
@@ -61,51 +61,51 @@ export default function Mission() {
           </div>
 
           {/* Core Mission Statement */}
-          <div className="p-10 bg-gradient-to-br from-yellow-500/25 via-gray-900/95 to-black/98 border-2 border-black/60 rounded-2xl text-center animate-fadeInUp relative overflow-hidden" style={{animationDelay: '0.8s'}}>
-            <div className="absolute inset-0 bg-gradient-to-t from-yellow-500/15 to-transparent"></div>
+          <div className="p-10 bg-gradient-to-br from-white via-gray-50 to-gray-100 border-2 border-gray-300 rounded-2xl text-center animate-fadeInUp relative overflow-hidden shadow-lg" style={{animationDelay: '0.8s'}}>
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-100/50 to-transparent"></div>
             <div className="relative z-10 space-y-4">
-              <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-400 bg-clip-text text-transparent mb-6">
+              <p className="text-2xl md:text-3xl font-bold text-yellow-600 mb-6">
                 This mission is about becoming complete.
               </p>
-              <div className="space-y-3 text-lg md:text-xl text-gray-200">
-                <p className="leading-relaxed">Becoming <span className="text-yellow-300 font-bold">worthy of credits.</span></p>
-                <p className="leading-relaxed">Becoming <span className="text-yellow-300 font-bold">professional, aligned, and undeniable.</span></p>
+              <div className="space-y-3 text-lg md:text-xl text-gray-700">
+                <p className="leading-relaxed">Becoming <span className="text-yellow-600 font-bold">worthy of credits.</span></p>
+                <p className="leading-relaxed">Becoming <span className="text-yellow-600 font-bold">professional, aligned, and undeniable.</span></p>
               </div>
             </div>
           </div>
 
           {/* Vision Section */}
           <div className="space-y-6 text-center animate-fadeInUp" style={{animationDelay: '1s'}}>
-            <div className="p-8 bg-gradient-to-r from-black/90 via-gray-900/85 to-black/90 border border-black/50 rounded-lg">
-              <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-4">
-                We're building <span className="bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-400 bg-clip-text text-transparent font-black text-3xl">global generational wealth</span> here — wealth from the inside out.
+            <div className="p-8 bg-gradient-to-r from-white via-gray-50 to-gray-100 border border-gray-300 rounded-lg shadow-lg">
+              <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-4">
+                We're building <span className="text-yellow-600 font-black text-3xl">global generational wealth</span> here — wealth from the inside out.
               </p>
-              <div className="space-y-3 text-lg md:text-xl text-gray-300">
-                <p>We're talking <span className="text-yellow-300 font-bold">mastery.</span></p>
-                <p>We're talking <span className="text-yellow-300 font-bold">freedom of mind, body, and spirit.</span></p>
+              <div className="space-y-3 text-lg md:text-xl text-gray-600">
+                <p>We're talking <span className="text-yellow-600 font-bold">mastery.</span></p>
+                <p>We're talking <span className="text-yellow-600 font-bold">freedom of mind, body, and spirit.</span></p>
                 <p>We're talking alignment with purpose so tight that the universe can't help but respond.</p>
               </div>
             </div>
           </div>
 
           {/* Final Call to Action */}
-          <div className="mt-12 p-12 bg-gradient-to-br from-black/98 via-gray-900/95 to-black/98 border-2 border-black rounded-2xl text-center animate-glow animate-fadeInUp relative overflow-hidden" style={{animationDelay: '1.2s'}}>
-            <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/15 to-transparent"></div>
+          <div className="mt-12 p-12 bg-gradient-to-br from-white via-gray-50 to-gray-100 border-2 border-gray-300 rounded-2xl text-center animate-glow animate-fadeInUp relative overflow-hidden shadow-lg" style={{animationDelay: '1.2s'}}>
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-100/50 to-transparent"></div>
             <div className="relative z-10">
               <div className="mb-6 flex items-center justify-center space-x-4">
                 <div className="h-px w-20 bg-gradient-to-r from-transparent to-black"></div>
-                <p className="text-3xl md:text-4xl font-black bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-400 bg-clip-text text-transparent tracking-wide">
+                <p className="text-3xl md:text-4xl font-black text-yellow-600 tracking-wide">
                   THIS IS THE MISSION
                 </p>
                 <div className="h-px w-20 bg-gradient-to-l from-transparent to-black"></div>
               </div>
-              <p className="text-2xl md:text-3xl font-bold text-white mb-4">
+              <p className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
                 This is the congregation.
               </p>
-              <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent mb-8">
+              <p className="text-2xl md:text-3xl font-bold text-gray-700 mb-8">
                 This is the transformation of a lifetime
               </p>
-              <p className="text-xl text-yellow-300 font-bold italic">
+              <p className="text-xl text-yellow-600 font-bold italic">
                 — for those ready to commit.
               </p>
             </div>

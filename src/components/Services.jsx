@@ -77,21 +77,21 @@ export default function Services() {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="group bg-gradient-to-br from-black via-gray-900 to-black border-2 border-black rounded-xl overflow-hidden hover:border-yellow-500 transition-all duration-500 animate-fadeInUp"
+              className="group bg-gradient-to-br from-white via-gray-50 to-gray-100 border-2 border-gray-300 rounded-xl overflow-hidden hover:border-yellow-500 transition-all duration-500 animate-fadeInUp shadow-lg hover:shadow-xl"
               style={{animationDelay: `${0.1 * index}s`}}
             >
               <div className="p-8">
                 <div className="mb-6">
-                  <h3 className="text-2xl font-bold text-white mb-2">{service.title}</h3>
-                  <div className="text-3xl font-black bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-400 bg-clip-text text-transparent mb-4">{service.price}</div>
-                  <p className="text-gray-300 leading-relaxed">{service.description}</p>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2">{service.title}</h3>
+                  <div className="text-3xl font-black text-yellow-600 mb-4">{service.price}</div>
+                  <p className="text-gray-600 leading-relaxed">{service.description}</p>
                 </div>
 
                 <ul className="space-y-3 mb-8">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start space-x-3">
-                      <span className="text-yellow-300 mt-1">✓</span>
-                      <span className="text-gray-300 text-sm">{feature}</span>
+                      <span className="text-yellow-600 mt-1">✓</span>
+                      <span className="text-gray-600 text-sm">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -99,11 +99,11 @@ export default function Services() {
                 <div className="space-y-4">
                   <a 
                     href={`/service/${getServiceId(service.title)}`} 
-                    className="block w-full text-center py-3 bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 text-black font-bold uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/50 rounded-lg"
+                    className="block w-full text-center py-3 bg-yellow-500 text-black font-bold uppercase tracking-wider transition-all duration-300 hover:bg-yellow-600 rounded-lg"
                   >
                     Learn More
                   </a>
-                  <button className="w-full py-3 border-2 border-black text-black font-bold uppercase tracking-wider transition-all duration-300 hover:bg-black hover:text-yellow-300 rounded-lg">
+                  <button className="w-full py-3 border-2 border-gray-400 text-gray-700 font-bold uppercase tracking-wider transition-all duration-300 hover:bg-gray-200 rounded-lg">
                     {service.cta}
                   </button>
                 </div>
@@ -113,16 +113,16 @@ export default function Services() {
         </div>
 
         {/* Guarantee Section */}
-        <div className="mt-16 p-8 bg-gradient-to-r from-black via-gray-900 to-black border-2 border-black rounded-2xl text-center animate-fadeInUp" style={{animationDelay: '0.5s'}}>
+        <div className="mt-16 p-8 bg-gradient-to-r from-white via-gray-50 to-gray-100 border-2 border-gray-300 rounded-2xl text-center animate-fadeInUp shadow-lg" style={{animationDelay: '0.5s'}}>
           <div className="inline-flex items-center justify-center space-x-3 mb-4">
             <span className="text-2xl">💯</span>
-            <h3 className="text-2xl font-bold text-white">Our Ironclad Guarantee</h3>
+            <h3 className="text-2xl font-bold text-gray-800">Our Ironclad Guarantee</h3>
             <span className="text-2xl">💯</span>
           </div>
-          <p className="text-xl text-yellow-300 font-bold mb-2">
+          <p className="text-xl text-yellow-600 font-bold mb-2">
             If you don't see tangible results within 30 days, we'll refund your investment. No questions asked.
           </p>
-          <p className="text-gray-400">
+          <p className="text-gray-600">
             * Terms and conditions apply. Results may vary based on individual commitment and effort.
           </p>
         </div>

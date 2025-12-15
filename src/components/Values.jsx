@@ -41,16 +41,16 @@ export default function Values() {
           {values.map((value, index) => (
             <div 
               key={index} 
-              className="group bg-gradient-to-br from-black via-gray-900 to-black border-2 border-black rounded-xl p-6 hover:border-yellow-500 transition-all duration-500 animate-fadeInUp"
+              className="group bg-gradient-to-br from-white via-gray-50 to-gray-100 border-2 border-gray-300 rounded-xl p-6 hover:border-yellow-500 transition-all duration-500 animate-fadeInUp shadow-lg hover:shadow-xl"
               style={{animationDelay: `${0.1 * index}s`}}
             >
               <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
                 {value.icon}
               </div>
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-yellow-300 transition-colors duration-300">
+              <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors duration-300">
                 {value.title}
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 {value.description}
               </p>
             </div>
@@ -59,11 +59,11 @@ export default function Values() {
 
         {/* Closing Statement */}
         <div className="mt-16 sm:mt-20 text-center animate-fadeInUp" style={{animationDelay: '1s'}}>
-          <div className="inline-block p-8 bg-gradient-to-r from-black via-gray-900 to-black border-2 border-black rounded-2xl">
-            <p className="text-2xl sm:text-3xl font-bold text-white mb-4">
+          <div className="inline-block p-8 bg-gradient-to-r from-white via-gray-50 to-gray-100 border-2 border-gray-300 rounded-2xl shadow-lg">
+            <p className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
               These values are not just words on a page.
             </p>
-            <p className="text-xl sm:text-2xl text-yellow-300 font-bold">
+            <p className="text-xl sm:text-2xl text-yellow-600 font-bold">
               They are the foundation of everything we build.
             </p>
           </div>
