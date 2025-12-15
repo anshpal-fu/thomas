@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrollToTop';
 
 export default function About() {
   return (
@@ -52,22 +53,26 @@ export default function About() {
               </div>
             </div>
             
-            <div className="text-center py-12 border-t border-[var(--gold)]/20">
-              <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Future?</h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Join thousands who have already begun their journey toward financial freedom and generational wealth.
-              </p>
-              <a 
-                href="/services" 
-                className="inline-block px-8 py-4 bg-gradient-to-r from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-dark)] text-black font-bold hover:from-[var(--gold)] hover:via-[var(--gold-light)] hover:to-[var(--gold)] transition-all duration-500 uppercase tracking-wider shadow-lg hover:shadow-[var(--gold)]/50"
-              >
-                Explore Our Services
-              </a>
+            {/* Ready to Transform Your Future Section - Updated to match Home page CTA */}
+            <div className="text-center py-12 bg-yellow-100 text-black rounded-2xl">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Future?</h2>
+                <p className="text-xl mb-8 max-w-2xl mx-auto">
+                  Join thousands who have already begun their journey toward financial freedom and generational wealth.
+                </p>
+                <a 
+                  href="/services" 
+                  className="inline-block px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold hover:from-yellow-600 hover:to-yellow-700 transition-all duration-500 uppercase tracking-wider shadow-lg hover:shadow-xl rounded-lg"
+                >
+                  Explore Our Services
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

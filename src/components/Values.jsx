@@ -17,11 +17,11 @@ export default function Values() {
   ];
 
   return (
-    <section id="values" className="py-16 sm:py-24 px-4 sm:px-6 bg-yellow-400 text-black relative overflow-hidden">
+    <section id="values" className="py-16 sm:py-24 px-4 sm:px-6 bg-yellow-100 text-black relative overflow-hidden">
       {/* Background Gradients */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/3 left-0 w-96 h-96 bg-gradient-to-r from-yellow-500/25 to-transparent rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/3 right-0 w-96 h-96 bg-gradient-to-l from-yellow-500/25 to-transparent rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/3 left-0 w-96 h-96 bg-gradient-to-r from-yellow-200/15 to-transparent rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-1/3 right-0 w-96 h-96 bg-gradient-to-l from-yellow-200/15 to-transparent rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
