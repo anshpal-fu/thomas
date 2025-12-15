@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useTheme } from '../contexts/ThemeContext';
 
 export default function Services() {
@@ -15,7 +16,8 @@ export default function Services() {
         "Immediate action plan",
         "Q&A with Thomas John Hong"
       ],
-      cta: "Book Session"
+      cta: "Book Session",
+      id: "consulting"
     },
     {
       title: "Transfiguration Package",
@@ -29,7 +31,8 @@ export default function Services() {
         "Resource library access",
         "Community access"
       ],
-      cta: "Transform Now"
+      cta: "Transform Now",
+      id: "transfiguration"
     },
     {
       title: "3-Month Mastery Immersion",
@@ -44,13 +47,10 @@ export default function Services() {
         "Lifetime community access",
         "Ongoing alumni support"
       ],
-      cta: "Achieve Mastery"
+      cta: "Achieve Mastery",
+      id: "mastery"
     }
   ];
-
-  const getServiceId = (title) => {
-    return title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
-  };
 
   return (
     <section id="services" className="py-20 sm:py-32 px-4 sm:px-6 bg-yellow-400 text-black relative overflow-hidden">
@@ -77,10 +77,10 @@ export default function Services() {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="group bg-gradient-to-br from-white via-gray-50 to-gray-100 border-2 border-gray-300 rounded-xl overflow-hidden hover:border-yellow-500 transition-all duration-500 animate-fadeInUp shadow-lg hover:shadow-xl"
+              className="group bg-gradient-to-br from-white via-gray-50 to-gray-100 border-2 border-gray-300 rounded-xl overflow-hidden hover:border-yellow-500 transition-all duration-500 animate-fadeInUp shadow-lg hover:shadow-xl h-full flex flex-col"
               style={{animationDelay: `${0.1 * index}s`}}
             >
-              <div className="p-8">
+              <div className="p-8 flex-grow">
                 <div className="mb-6">
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">{service.title}</h3>
                   <div className="text-3xl font-black text-yellow-600 mb-4">{service.price}</div>
@@ -95,14 +95,16 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
+              </div>
 
+              <div className="p-8 pt-0">
                 <div className="space-y-4">
-                  <a 
-                    href={`/service/${getServiceId(service.title)}`} 
+                  <Link 
+                    to={`/service/${service.id}`} 
                     className="block w-full text-center py-3 bg-yellow-500 text-black font-bold uppercase tracking-wider transition-all duration-300 hover:bg-yellow-600 rounded-lg"
                   >
                     Learn More
-                  </a>
+                  </Link>
                   <button className="w-full py-3 border-2 border-gray-400 text-gray-700 font-bold uppercase tracking-wider transition-all duration-300 hover:bg-gray-200 rounded-lg">
                     {service.cta}
                   </button>
