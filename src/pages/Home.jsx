@@ -6,21 +6,20 @@ import Mission from '../components/Mission';
 import Vision from '../components/Vision';
 import Values from '../components/Values';
 import CTA from '../components/CTA';
+import Services from '../components/Services';
 import ScrollToTop from '../components/ScrollToTop';
-import AlternatingBackground from '../components/AlternatingBackground';
 
 export default function Home() {
   return (
     <div className="app">
       <Navbar />
       <main className="pt-20">
-        <AlternatingBackground>
-          <Hero />
-          <Mission />
-          <Vision />
-          <Values />
-          <CTA />
-        </AlternatingBackground>
+        <Hero />
+        <Mission />
+        <Vision />
+        <Values />
+        <Services />
+        <CTA />
       </main>
       <Footer />
       <ScrollToTop />

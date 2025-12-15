@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { useTheme } from '../contexts/ThemeContext';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import AlternatingBackground from '../components/AlternatingBackground';
 
 const services = [
   {
@@ -83,7 +82,7 @@ export default function ServiceDetail() {
     <div className="min-h-screen bg-gradient-to-b from-black via-[var(--gray-900)] to-black">
       <Navbar />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-24" data-bg-section data-bg-color="#000000">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-24">
         {/* Back to Services Link */}
         <div className="mb-8">
           <a 
