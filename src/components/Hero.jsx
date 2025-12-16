@@ -42,7 +42,7 @@ export default function Hero() {
             align with your vision, and walk step-by-step into the reality you were meant to create.
           </p>
 
-          {/* Mission */}
+          {/* Mission
           <div className="mt-8 sm:mt-12 p-6 sm:p-8 border border-yellow-400/40 bg-gradient-to-br from-black/80 via-gray-900/60 to-black/80 backdrop-blur-sm max-w-2xl mx-auto rounded-lg animate-fadeInUp hover:border-yellow-400/60 transition-all duration-500" style={{animationDelay: '0.7s'}}>
             <p className="text-xs sm:text-sm uppercase tracking-widest text-yellow-400 mb-2 sm:mb-3">The Mission</p>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent mb-3 sm:mb-4">INVEST IN YOURSELF</h2>
@@ -50,7 +50,7 @@ export default function Hero() {
               When you invest in yourself—when you put your own credits on the line—
               the exchange hits different. You become accountable. You become a doer, not just a dreamer.
             </p>
-          </div>
+          </div> */}
 
           {/* CTA Button */}
           <div className="mt-8 sm:mt-12 animate-fadeInUp" style={{animationDelay: '0.9s'}}>

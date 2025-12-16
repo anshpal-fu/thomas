@@ -17,11 +17,13 @@ export default function Values() {
   ];
 
   return (
-    <section id="values" className="py-16 sm:py-24 px-4 sm:px-6 bg-yellow-100 text-black relative overflow-hidden">
-      {/* Background Gradients */}
+    <section id="values" className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-tr from-yellow-300 via-yellow-400 to-yellow-500 text-black relative overflow-hidden">
+      {/* Enhanced Animated Background Gradients */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/3 left-0 w-96 h-96 bg-gradient-to-r from-yellow-200/15 to-transparent rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/3 right-0 w-96 h-96 bg-gradient-to-l from-yellow-200/15 to-transparent rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/5 left-1/4 w-[450px] h-[450px] bg-gradient-to-r from-yellow-200/35 via-transparent to-yellow-500/25 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-1/5 right-1/4 w-[500px] h-[500px] bg-gradient-to-l from-yellow-600/35 via-transparent to-yellow-300/25 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-2/3 left-1/3 w-[350px] h-[350px] bg-gradient-to-tr from-yellow-400/30 to-transparent rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/3 right-1/3 w-[300px] h-[300px] bg-gradient-to-bl from-yellow-500/25 to-transparent rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">

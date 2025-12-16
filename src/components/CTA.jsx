@@ -5,11 +5,13 @@ export default function CTA() {
   const { theme } = useTheme();
   
   return (
-    <section className="py-20 sm:py-32 px-4 sm:px-6 bg-yellow-100 text-black relative overflow-hidden">
-      {/* Animated Background Elements */}
+    <section className="py-20 sm:py-32 px-4 sm:px-6 bg-gradient-to-bl from-yellow-300 via-yellow-400 to-yellow-500 text-black relative overflow-hidden">
+      {/* Enhanced Animated Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-bl from-yellow-200/15 to-transparent rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gradient-to-tr from-yellow-200/15 to-transparent rounded-full blur-3xl animate-float" style={{animationDelay: '1.5s'}}></div>
+        <div className="absolute top-1/5 right-1/3 w-[400px] h-[400px] bg-gradient-to-bl from-yellow-200/35 via-transparent to-yellow-500/25 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-1/5 left-1/3 w-[500px] h-[500px] bg-gradient-to-tr from-yellow-600/35 via-transparent to-yellow-300/25 rounded-full blur-3xl animate-float" style={{animationDelay: '1.5s'}}></div>
+        <div className="absolute top-2/3 right-1/4 w-[350px] h-[350px] bg-gradient-to-tl from-yellow-400/30 to-transparent rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/3 left-1/4 w-[300px] h-[300px] bg-gradient-to-br from-yellow-500/25 to-transparent rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
       </div>
 
       <div className="max-w-5xl mx-auto relative z-10 text-center">
