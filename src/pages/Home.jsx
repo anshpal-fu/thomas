@@ -19,6 +19,12 @@ export default function Home() {
         <Vision />
         <Values />
         <Services />
+        {/* Thin horizontal divider between sections */}
+        <div className="py-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="h-px bg-gradient-to-r from-transparent via-yellow-500/30 to-transparent"></div>
+          </div>
+        </div>
         <CTA />
       </main>
       <Footer />

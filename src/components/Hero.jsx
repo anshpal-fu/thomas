@@ -9,6 +9,10 @@ export default function Hero() {
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black"></div>
+        {/* Subtle abstract background pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 left-0 w-full h-full bg-repeat" style={{ backgroundImage: 'radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 20%), radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 20%)' }}></div>
+        </div>
         {/* Animated Gradient Orbs */}
         <div className="absolute top-1/4 left-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-gradient-to-r from-yellow-500/20 to-transparent rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-gradient-to-l from-yellow-500/20 to-transparent rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
@@ -37,7 +41,7 @@ export default function Hero() {
           </div>
 
           {/* Description */}
-          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed animate-fadeInUp px-4" style={{animationDelay: '0.5s'}}>
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed animate-fadeInUp px-2" style={{animationDelay: '0.5s'}}>
             Leave stains on brains and footprints on this earth—awaken to your potential, 
             align with your vision, and walk step-by-step into the reality you were meant to create.
           </p>
@@ -53,10 +57,10 @@ export default function Hero() {
           </div> */}
 
           {/* CTA Button */}
-          <div className="mt-8 sm:mt-12 animate-fadeInUp" style={{animationDelay: '0.9s'}}>
+          <div className="mt-8 sm:pb-10 sm:mt-12 animate-fadeInUp" style={{animationDelay: '0.9s'}}>
             <a
               href="#services"
-              className="group relative inline-block px-8 sm:px-12 py-3 sm:py-4 bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 text-black font-bold text-base sm:text-lg uppercase tracking-wider transition-all duration-300 shadow-2xl hover:shadow-yellow-500/50 overflow-hidden rounded-lg"
+              className="group relative inline-block px-8 sm:px-12 py-3 sm:py-4 bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 text-black font-bold text-base sm:text-lg uppercase tracking-wider transition-all duration-300 shadow-2xl hover:shadow-yellow-500/50 overflow-hidden rounded-lg text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed animate-fadeInUp"
             >
               <span className="relative z-10">Start Your Journey</span>
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-yellow-300 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>

@@ -17,7 +17,8 @@ export default function Services() {
         "Q&A with Thomas John Hong"
       ],
       cta: "Book Session",
-      id: "consulting"
+      id: "consulting",
+      backgroundImage: "/two-businesspeople-having-conversation-office.jpg"
     },
     {
       title: "Transfiguration Package",
@@ -48,7 +49,8 @@ export default function Services() {
         "Ongoing alumni support"
       ],
       cta: "Achieve Mastery",
-      id: "mastery"
+      id: "mastery",
+      backgroundImage: "/student-online-cute-guy-checked-shirt-with-glasses-studying-computer-looking-up.jpg"
     }
   ];
 
@@ -77,13 +79,33 @@ export default function Services() {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="group bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 border-2 border-gray-700 rounded-xl overflow-hidden hover:border-yellow-500 transition-all duration-500 animate-fadeInUp shadow-lg hover:shadow-xl h-full flex flex-col"
+              className="group border-2 border-gray-700 rounded-xl overflow-hidden hover:border-yellow-500 transition-all duration-500 animate-fadeInUp shadow-lg hover:shadow-xl h-full flex flex-col relative"
               style={{animationDelay: `${0.1 * index}s`}}
             >
-              <div className="p-8 flex-grow">
+              {/* Background with image */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
+              {service.backgroundImage && (
+                <div className="absolute inset-0">
+                  <img 
+                    src={service.backgroundImage}
+                    alt=""
+                    className="w-full h-full object-cover opacity-20"
+                  />
+                </div>
+              )}
+              
+              <div className="p-8 flex-grow relative z-10">
                 <div className="mb-6">
-                  <h3 className="text-2xl font-bold text-white mb-2">{service.title}</h3>
-                  <div className="text-3xl font-black text-yellow-500 mb-4">{service.price}</div>
+                  {/* Decorative icon above title */}
+                  <div className="flex justify-center mb-4">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center">
+                      <span className="text-black font-bold text-xl">
+                        {index + 1}
+                      </span>
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-2 text-center">{service.title}</h3>
+                  <div className="text-3xl font-black text-yellow-500 mb-4 text-center">{service.price}</div>
                   <p className="text-gray-300 leading-relaxed">{service.description}</p>
                 </div>
 

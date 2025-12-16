@@ -74,6 +74,8 @@ export default function Values() {
                 <p className="text-xs text-gray-600">
                   {value.description}
                 </p>
+                {/* Subtle decorative element */}
+                <div className="mt-2 w-8 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full"></div>
               </div>
             </div>
           ))}
