@@ -5,7 +5,7 @@ export default function Hero() {
   const { theme } = useTheme();
   
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 px-4 sm:px-6 bg-black text-white">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-10 px-4 sm:px-6 bg-black text-white">
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black"></div>
