@@ -40,7 +40,7 @@ export default function Footer() {
 
           {/* Contact Section */}
           <div className="animate-fadeInUp" style={{animationDelay: '0.1s'}}>
-            <h4 className="text-white font-black mb-5 text-base tracking-wider uppercase border-b border-[var(--gold)]/20 pb-2">Contact</h4>
+            <h4 className="text-white font-black mb-5 text-base tracking-wider uppercase border-b border-[var(--gold)]/20 pb-2">Contact Us</h4>
             <div className="space-y-3 text-sm">
               <div className="group">
                 <p className="text-gray-500 text-xs mb-1 uppercase tracking-wide">Email</p>

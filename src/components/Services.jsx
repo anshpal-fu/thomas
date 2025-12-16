@@ -105,9 +105,12 @@ export default function Services() {
                   >
                     Learn More
                   </Link>
-                  <button className="w-full py-3 border-2 border-gray-600 text-gray-300 font-bold uppercase tracking-wider transition-all duration-300 hover:bg-gray-800 rounded-lg">
+                  <Link 
+                    to="/contact" 
+                    className="block w-full text-center py-3 border-2 border-gray-600 text-gray-300 font-bold uppercase tracking-wider transition-all duration-300 hover:bg-gray-800 rounded-lg"
+                  >
                     {service.cta}
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -35,7 +35,7 @@ export default function CTA() {
               href="mailto:thomasjohnhong@globalgenerationalwealth.net" 
               className="px-8 py-4 bg-gradient-to-r from-gray-800 to-black text-white font-bold text-lg uppercase tracking-wider transition-all duration-300 hover:from-black hover:to-gray-900 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              Contact Thomas
+              Contact Us
             </a>
           </div>
         </div>

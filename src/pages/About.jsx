@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import CTA from '../components/CTA';
 import ScrollToTop from '../components/ScrollToTop';
 
 export default function About() {
@@ -53,29 +54,8 @@ export default function About() {
               </div>
             </div>
             
-            {/* Ready to Transform Your Future Section - Updated to match Home page CTA */}
-            <div className="text-center py-12 bg-gradient-to-bl from-yellow-300 via-yellow-400 to-yellow-500 text-black rounded-2xl relative overflow-hidden">
-              {/* Background Gradients */}
-              <div className="absolute inset-0">
-                <div className="absolute top-1/5 right-1/3 w-[400px] h-[400px] bg-gradient-to-bl from-yellow-200/35 via-transparent to-yellow-500/25 rounded-full blur-3xl animate-float"></div>
-                <div className="absolute bottom-1/5 left-1/3 w-[500px] h-[500px] bg-gradient-to-tr from-yellow-600/35 via-transparent to-yellow-300/25 rounded-full blur-3xl animate-float" style={{animationDelay: '1.5s'}}></div>
-                <div className="absolute top-2/3 right-1/4 w-[350px] h-[350px] bg-gradient-to-tl from-yellow-400/30 to-transparent rounded-full blur-3xl animate-pulse"></div>
-                <div className="absolute bottom-1/3 left-1/4 w-[300px] h-[300px] bg-gradient-to-br from-yellow-500/25 to-transparent rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
-              </div>
-              
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Future?</h2>
-                <p className="text-xl mb-8 max-w-2xl mx-auto">
-                  Join thousands who have already begun their journey toward financial freedom and generational wealth.
-                </p>
-                <a 
-                  href="/services" 
-                  className="inline-block px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold hover:from-yellow-600 hover:to-yellow-700 transition-all duration-500 uppercase tracking-wider shadow-lg hover:shadow-xl rounded-lg"
-                >
-                  Explore Our Services
-                </a>
-              </div>
-            </div>
+            {/* Using the same CTA component as the home page for consistency */}
+            <CTA />
           </div>
         </div>
       </main>

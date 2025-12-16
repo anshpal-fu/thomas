@@ -59,7 +59,7 @@ export default function Navbar() {
             </Link>
             
             <Link
-              to="/services"
+              to="/contact"
               className="group relative px-4 sm:px-8 py-2 sm:py-3 bg-gradient-to-r from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-dark)] text-black font-bold hover:from-[var(--gold)] hover:via-[var(--gold-light)] hover:to-[var(--gold)] transition-all duration-500 uppercase text-xs sm:text-sm tracking-wider shadow-lg hover:shadow-[var(--gold)]/50 overflow-hidden"
             >
               <span className="relative z-10">Book Session</span>
@@ -94,7 +94,7 @@ export default function Navbar() {
                 Services
               </Link>
               <Link
-                to="/services"
+                to="/contact"
                 className="block w-full text-center mt-2 px-4 py-2 bg-gradient-to-r from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-dark)] text-black font-bold hover:from-[var(--gold)] hover:via-[var(--gold-light)] hover:to-[var(--gold)] transition-all duration-500 uppercase text-sm tracking-wider shadow-lg hover:shadow-[var(--gold)]/50"
                 onClick={() => setIsMenuOpen(false)}
               >
