@@ -34,12 +34,14 @@ export default function Vision() {
             </p>
           </div>
           <div className="relative">
-            <div className="aspect-video bg-gradient-to-br from-gray-900 to-black border border-yellow-400/50 rounded-lg flex items-center justify-center p-8">
-              <div className="text-center">
-                <div className="text-5xl mb-4">🎓</div>
-                <p className="text-xl font-bold bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 bg-clip-text text-transparent">Real Education</p>
-                <p className="text-gray-400 mt-2">No shortcuts. No fluff.</p>
-              </div>
+            <div className="aspect-video bg-gradient-to-br from-gray-900 to-black border border-yellow-400/50 rounded-lg flex items-center justify-center p-8 overflow-hidden">
+              {/* Background image */}
+              <img 
+                src="/city-committed-education-collage-concept.jpg"
+                alt=""
+                className="absolute inset-0 w-full h-full object-cover opacity-20"
+              />
+              
             </div>
           </div>
         </div>
