@@ -34,12 +34,12 @@ export default function Vision() {
             </p>
           </div>
           <div className="relative">
-            <div className="aspect-video bg-gradient-to-br from-gray-900 to-black border border-yellow-400/50 rounded-lg flex items-center justify-center p-8 overflow-hidden">
+            <div className="aspect-video border border-yellow-400/50 rounded-lg flex items-center justify-center p-8 overflow-hidden">
               {/* Background image */}
               <img 
                 src="/city-committed-education-collage-concept.jpg"
-                alt=""
-                className="absolute inset-0 w-full h-full object-cover opacity-20"
+                alt="City committed education collage concept"
+                className="absolute inset-0 w-full h-full object-cover opacity-50"
               />
               
             </div>
@@ -47,11 +47,11 @@ export default function Vision() {
         </div>
 
         {/* Mission Statement */}
-        <div className="bg-gradient-to-r from-black via-gray-900 to-black border border-yellow-400/50 rounded-xl p-8 mb-16 animate-fadeInUp" style={{animationDelay: '0.4s'}}>
+        <div className="bg-gradient-to-r from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-dark)] border border-yellow-400/50 rounded-xl p-8 mb-16 animate-fadeInUp text-black" style={{animationDelay: '0.4s'}}>
           <blockquote className="text-2xl sm:text-3xl font-bold text-center italic leading-relaxed">
             "We're not just teaching skills — we're transforming mindsets, building character, and creating leaders who will leave stains on brains and footprints on this earth."
           </blockquote>
-          <cite className="block text-right mt-6 text-yellow-400 font-bold">— Thomas John Hong</cite>
+          <cite className="block text-right mt-6 text-black font-bold">— Thomas John Hong</cite>
         </div>
 
         {/* Core Principles */}

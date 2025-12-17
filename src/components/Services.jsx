@@ -18,7 +18,7 @@ export default function Services() {
       ],
       cta: "Book Session",
       id: "consulting",
-      backgroundImage: "/two-businesspeople-having-conversation-office.jpg"
+      backgroundImage: "/download (2).jpg"
     },
     {
       title: "Transfiguration Package",
@@ -33,7 +33,8 @@ export default function Services() {
         "Community access"
       ],
       cta: "Transform Now",
-      id: "transfiguration"
+      id: "transfiguration",
+      backgroundImage: "/Accredited leadership pathways that actually work.jpg"
     },
     {
       title: "3-Month Mastery Immersion",
@@ -85,16 +86,15 @@ export default function Services() {
               {/* Background with image */}
               <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
               {service.backgroundImage && (
-                <div className="absolute inset-0">
-                  <img 
-                    src={service.backgroundImage}
-                    alt=""
-                    className="w-full h-full object-cover opacity-20"
-                  />
-                </div>
+                <img 
+                  src={service.backgroundImage}
+                  alt={`${service.title} background`}
+                  className="absolute inset-0 w-full h-full object-cover opacity-30"
+                  onError={(e) => console.log(`Failed to load image: ${service.backgroundImage}`)}
+                />
               )}
               
-              <div className="p-8 flex-grow relative z-10">
+              <div className="p-6 sm:p-8 flex-grow relative z-10">
                 <div className="mb-6">
                   {/* Decorative icon above title */}
                   <div className="flex justify-center mb-4">
@@ -119,11 +119,11 @@ export default function Services() {
                 </ul>
               </div>
 
-              <div className="p-8 pt-0">
+              <div className="p-6 sm:p-8 pt-0">
                 <div className="space-y-4">
                   <Link 
                     to={`/service/${service.id}`} 
-                    className="block w-full text-center py-3 bg-yellow-500 text-black font-bold uppercase tracking-wider transition-all duration-300 hover:bg-yellow-600 rounded-lg"
+                    className="block w-full text-center py-3 bg-yellow-500 text-black font-bold uppercase tracking-wider transition-all duration-300 hover:bg-yellow-600 rounded-lg shadow-md hover:shadow-lg relative z-20"
                   >
                     Learn More
                   </Link>

@@ -28,11 +28,11 @@ export default function Values() {
   ];
 
   return (
-    <section id="values" className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-tr from-yellow-300 via-yellow-400 to-yellow-500 text-black relative overflow-hidden">
+    <section id="values" className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-r from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-dark)] text-black relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/2 w-64 h-64 sm:w-96 sm:h-96 bg-yellow-200/30 rounded-full blur-3xl transform -translate-x-1/2"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-56 h-56 sm:w-80 sm:h-80 bg-yellow-600/30 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/2 w-64 h-64 sm:w-96 sm:h-96 bg-[var(--gold-light)]/30 rounded-full blur-3xl transform -translate-x-1/2"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-56 h-56 sm:w-80 sm:h-80 bg-[var(--gold-dark)]/30 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
@@ -47,7 +47,8 @@ export default function Values() {
           </p>
         </div>
 
-        {/* Circular Progress Layout with 5 Circles */}
+        {/* Circular Arrangement Layout */}
+             {/* Circular Progress Layout with 5 Circles */}
         <div className="flex flex-wrap justify-center gap-8">
           {values.map((value, index) => (
             <div 
@@ -74,8 +75,6 @@ export default function Values() {
                 <p className="text-xs text-gray-600">
                   {value.description}
                 </p>
-                {/* Subtle decorative element */}
-                <div className="mt-2 w-8 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full"></div>
               </div>
             </div>
           ))}

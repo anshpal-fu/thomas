@@ -5,22 +5,22 @@ export default function CTA() {
   const { theme } = useTheme();
   
   return (
-    <section className="py-20 sm:py-32 px-4 sm:px-6 bg-gradient-to-bl from-yellow-300 via-yellow-400 to-yellow-500 text-black relative overflow-hidden">
+    <section className="py-8 sm:py-12 px-4 sm:px-6 bg-gradient-to-r from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-dark)] text-black relative overflow-hidden rounded-3xl">
       {/* Enhanced Animated Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/5 right-1/3 w-[400px] h-[400px] bg-gradient-to-bl from-yellow-200/35 via-transparent to-yellow-500/25 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/5 left-1/3 w-[500px] h-[500px] bg-gradient-to-tr from-yellow-600/35 via-transparent to-yellow-300/25 rounded-full blur-3xl animate-float" style={{animationDelay: '1.5s'}}></div>
-        <div className="absolute top-2/3 right-1/4 w-[350px] h-[350px] bg-gradient-to-tl from-yellow-400/30 to-transparent rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/3 left-1/4 w-[300px] h-[300px] bg-gradient-to-br from-yellow-500/25 to-transparent rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/5 right-1/3 w-[400px] h-[400px] bg-[var(--gold-light)]/35 via-transparent to-[var(--gold)]/25 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-1/5 left-1/3 w-[500px] h-[500px] bg-[var(--gold-dark)]/35 via-transparent to-[var(--gold-light)]/25 rounded-full blur-3xl animate-float" style={{animationDelay: '1.5s'}}></div>
+        <div className="absolute top-2/3 right-1/4 w-[350px] h-[350px] bg-[var(--gold)]/30 to-transparent rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/3 left-1/4 w-[300px] h-[300px] bg-[var(--gold-dark)]/25 to-transparent rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
       </div>
 
       <div className="max-w-5xl mx-auto relative z-10 text-center">
         <div className="animate-fadeInUp">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-black mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-black mb-4">
             READY TO TRANSFORM?
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-transparent via-black to-transparent mx-auto mb-8"></div>
-          <p className="text-xl sm:text-2xl text-black max-w-3xl mx-auto leading-relaxed font-medium mb-12">
+          <p className="text-xl sm:text-2xl text-black max-w-3xl mx-auto leading-relaxed font-medium mb-8">
             Join the movement toward global generational wealth
           </p>
           
