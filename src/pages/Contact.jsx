@@ -22,6 +22,11 @@ export default function Contact() {
               <div className="bg-gray-800/50 p-8 rounded-xl border border-[var(--gold)]/20 backdrop-blur-sm">
                 <h2 className="text-2xl font-bold mb-6 text-[var(--gold)]">Get In Touch</h2>
                 
+                {/* Logo Image */}
+                <div className="flex justify-start mb-6">
+                  <img src="/Modern Geometric Head Logo.png" alt="Logo" className="h-32 w-32 object-contain" />
+                </div>
+                
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Email</h3>
@@ -42,11 +47,13 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
                     <div className="flex space-x-4">
-                      <a href="http://www.youtube.com/@GLOBALGENERATIONALWEALTH" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300">
-                        YouTube
+                      <a href="http://www.youtube.com/@GLOBALGENERATIONALWEALTH" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 flex items-center space-x-2">
+                        <span>▶</span>
+                        <span>YouTube</span>
                       </a>
-                      <a href="https://www.tiktok.com/@globalgenerationalwealth" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300">
-                        TikTok
+                      <a href="https://www.tiktok.com/@globalgenerationalwealth" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 flex items-center space-x-2">
+                        <span>♪</span>
+                        <span>TikTok</span>
                       </a>
                     </div>
                   </div>
