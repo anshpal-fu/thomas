@@ -15,7 +15,30 @@
     --gray-700: #2A2A2A;
   }
 
-
+  /* Custom color classes */
+  .text-gold {
+    color: var(--gold);
+  }
+  
+  .text-gold-light {
+    color: var(--gold-light);
+  }
+  
+  .text-gold-dark {
+    color: var(--gold-dark);
+  }
+  
+  .bg-gold {
+    background-color: var(--gold);
+  }
+  
+  .bg-gold-light {
+    background-color: var(--gold-light);
+  }
+  
+  .bg-gold-dark {
+    background-color: var(--gold-dark);
+  }
 
   *,
   *::before,

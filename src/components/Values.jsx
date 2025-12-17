@@ -82,11 +82,11 @@ export default function Values() {
 
         {/* Closing Statement */}
         <div className="mt-16 sm:mt-20 text-center">
-          <div className="inline-block p-6 sm:p-8 bg-white rounded-2xl sm:rounded-3xl max-w-xs sm:max-w-2xl md:max-w-3xl mx-auto shadow-xl border-2 border-yellow-500">
+          <div className=" p-6 sm:p-8  rounded-2xl sm:rounded-3xl max-w-xs sm:max-w-2xl md:max-w-3xl mx-auto shadow-xl border-2 border-yellow-500">
             <p className="text-lg sm:text-2xl md:text-3xl font-bold text-black mb-3 sm:mb-4">
               These values are not just words on a page.
             </p>
-            <p className="text-base sm:text-xl md:text-2xl font-bold text-yellow-600">
+            <p className="text-base sm:text-xl md:text-2xl font-bold text-black">
               They are the foundation of everything we build.
             </p>
           </div>
