@@ -22,6 +22,15 @@ export default function Contact() {
               <div className="bg-gray-800/50 p-8 rounded-xl border border-[var(--gold)]/20 backdrop-blur-sm">
                 <h2 className="text-2xl font-bold mb-6 text-[var(--gold)]">Get In Touch</h2>
                 
+                {/* Logo */}
+                <div className="flex justify-start mb-6">
+                  <img 
+                    src="/Modern Geometric Head Logo.png" 
+                    alt="Global Generational Wealth Logo" 
+                    className="h-32 w-auto"
+                  />
+                </div>
+                
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Email</h3>
