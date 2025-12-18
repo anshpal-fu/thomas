@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useTheme } from '../contexts/ThemeContext';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrollToTop';
 
 const services = [
   {
@@ -170,6 +171,7 @@ export default function ServiceDetail() {
       </div>
       
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
