@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import ServicesPage from './pages/ServicesPage'
 import About from './pages/About'
@@ -36,9 +36,7 @@ function AppRoutes() {
 function App() {
   return (
     <ThemeProvider>
-      <Router>
-        <AppRoutes />
-      </Router>
+      <AppRoutes />
     </ThemeProvider>
   )
 }
