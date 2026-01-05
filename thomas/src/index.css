@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+/* =========================
+   BASE THEME VARIABLES
+========================= */
+@layer base {
+  :root {
+    --gold: #D4AF37;
+    --gold-light: #F4E5C2;
+    --gold-dark: #8B7355;
+
+    --black: #0A0A0A;
+    --gray-900: #111111;
+    --gray-800: #1A1A1A;
+    --gray-700: #2A2A2A;
+  }
+
+
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont,
+      'Segoe UI', 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #000000, #0A0A0A);
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--black);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      180deg,
+      var(--gold),
+      var(--gold-dark)
+    );
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      180deg,
+      var(--gold-light),
+      var(--gold)
+    );
+  }
+
+  /* Text Selection */
+  ::selection {
+    background: var(--gold);
+    color: var(--black);
+  }
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.6);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* =========================
+   UTILITY CLASSES
+========================= */
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out both;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.8s ease-out both;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.8s ease-out both;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* =========================
+   GRADIENT TEXT (LUXURY)
+========================= */
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    var(--gold-light),
+    var(--gold),
+    var(--gold-dark)
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
