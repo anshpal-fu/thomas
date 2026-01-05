@@ -11,11 +11,11 @@ export default function Values() {
     },
     { 
       title: 'LEARNING', 
-      desc: 'Ascending & building our environments'
+      desc: 'Ascending & building our environments. Continuous growth for success.'
     },
     { 
       title: 'MASTERY', 
-      desc: 'Pursuing excellence in self.'
+      desc: 'Pursuing excellence in self. Becoming the best version through discipline.'
     },
     { 
       title: 'AWARENESS', 
@@ -23,7 +23,7 @@ export default function Values() {
     },
     { 
       title: 'SERVICE', 
-      desc: 'Supporting EVERY client, family, & entity in reaching their highest vision.'
+      desc: 'Supporting every client, family, & entity in reaching their highest vision.'
     },
     {
       title: 'IMPACT',
@@ -31,7 +31,7 @@ export default function Values() {
     },
     {
       title: 'ACTION',
-      desc: 'Definiteness of Purpose'
+      desc: 'Definiteness of Purpose. Taking decisive steps with unwavering commitment.'
     }
   ];
 
@@ -70,7 +70,7 @@ export default function Values() {
               </div>
 
               {/* Title */}
-              <h3 className="text-lg font-black text-gray-900 mb-2">
+              <h3 className="text-lg font-black text-gray-900 mb-2 mt-4">
                 {value.title}
               </h3>
 
@@ -78,9 +78,6 @@ export default function Values() {
               <p className="text-sm text-gray-700 leading-relaxed">
                 {value.desc}
               </p>
-              
-              {/* Text indicator */}
-              
             </div>
           ))}
         </div>
