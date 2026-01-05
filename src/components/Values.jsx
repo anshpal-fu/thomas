@@ -6,89 +6,97 @@ export default function Values() {
   
   const values = [
     { 
-      title: 'Integrity', 
-      description: 'Operating with honesty and strong moral principles in everything we do'
+      title: 'INTEGRITY', 
+      desc: 'Operating honesty & strong moral principles when no one is watching'
     },
     { 
-      title: 'Mastery', 
-      description: 'Pursuing excellence and mastery in all areas of life'
+      title: 'LEARNING', 
+      desc: 'Ascending & building our environments'
     },
     { 
-      title: 'Prosperity', 
-      description: 'Building wealth that lasts for generations to come'
+      title: 'MASTERY', 
+      desc: 'Pursuing excellence in self.'
     },
     { 
-      title: 'Impact', 
-      description: 'Leaving stains on brains and footprints on this earth'
+      title: 'AWARENESS', 
+      desc: 'Creating the right team outperforms individual effort'
     },
     { 
-      title: 'Service', 
-      description: 'Supporting every client, family, and leader in reaching their highest vision'
+      title: 'SERVICE', 
+      desc: 'Supporting EVERY client, family, & entity in reaching their highest vision.'
+    },
+    {
+      title: 'IMPACT',
+      desc: 'Breaking generational curses, leaving stains on brains & footprints on this earth.'
+    },
+    {
+      title: 'ACTION',
+      desc: 'Definiteness of Purpose'
     }
   ];
 
   return (
-    <section id="values" className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-r from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-dark)] text-black relative overflow-hidden">
+    <section id="values" className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-br from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-light)] text-black relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/2 w-64 h-64 sm:w-96 sm:h-96 bg-[var(--gold-light)]/30 rounded-full blur-3xl transform -translate-x-1/2"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-56 h-56 sm:w-80 sm:h-80 bg-[var(--gold-dark)]/30 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-yellow-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-56 h-56 sm:w-80 sm:h-80 bg-yellow-600/10 rounded-full blur-3xl animate-bounce" style={{ animationDuration: '6s' }}></div>
+        <div className="absolute top-1/2 left-1/2 w-48 h-48 bg-yellow-400/5 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2 animate-ping" style={{ animationDuration: '8s' }}></div>
       </div>
 
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10 px-4">
         {/* Section Header */}
-        <div className="text-center mb-12 sm:mb-16 md:mb-20">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-4 sm:mb-6">
-            OUR VALUES
+        <div className="text-center mb-16 sm:mb-20 md:mb-24">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-black mb-6 relative inline-block">
+            <span className="relative z-10">CORE VALUES</span>
+            <div className="absolute bottom-0 left-0 w-full h-2 bg-yellow-500/30 transform -skew-x-12"></div>
           </h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-transparent via-black to-transparent mx-auto mb-6"></div>
-          <p className="text-base sm:text-xl text-black max-w-2xl sm:max-w-3xl mx-auto leading-relaxed font-medium">
+          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-yellow-600 to-transparent mx-auto mb-8"></div>
+          <p className="text-lg sm:text-xl md:text-2xl text-black/90 max-w-3xl mx-auto leading-relaxed font-medium">
             The foundational principles that guide everything we do
           </p>
         </div>
 
-        {/* Circular Arrangement Layout */}
-             {/* Circular Progress Layout with 5 Circles */}
-        <div className="flex flex-wrap justify-center gap-8">
+        {/* Grid Circle Layout */}
+        <div className="flex flex-wrap justify-center gap-8 pb-6">
           {values.map((value, index) => (
-            <div 
+            <div
               key={index}
-              className="relative w-48 h-48"
+              className="relative w-48 h-48 rounded-full bg-white border-4 border-yellow-500 shadow-xl flex flex-col items-center justify-center text-center px-4 hover:scale-105 transition-all duration-300"
             >
-              {/* Circular progress background */}
-              <div className="absolute inset-0 rounded-full border-8 border-yellow-200"></div>
-              
-              {/* Progress fill */}
-              <div 
-                className="absolute inset-0 rounded-full border-8 border-yellow-500 clip-path-progress"
-                style={{ clipPath: `inset(0 0 ${100 - (index + 1) * 20}% 0)` }}
-              ></div>
-              
-              {/* Content container */}
-              <div className="absolute inset-4 rounded-full bg-white border-2 border-yellow-500 flex flex-col items-center justify-center p-4 text-center">
-                <div className="text-2xl font-bold text-yellow-600 mb-2">
-                  {index + 1}
-                </div>
-                <h3 className="text-lg font-bold text-gray-800 mb-2">
-                  {value.title}
-                </h3>
-                <p className="text-xs text-gray-600">
-                  {value.description}
-                </p>
+              {/* Number */}
+              <div className="absolute -top-4 w-9 h-9 rounded-full bg-yellow-500 text-white flex items-center justify-center font-black text-sm shadow-md">
+                {index + 1}
               </div>
+
+              {/* Title */}
+              <h3 className="text-lg font-black text-gray-900 mb-2">
+                {value.title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-sm text-gray-700 leading-relaxed">
+                {value.desc}
+              </p>
+              
+              {/* Text indicator */}
+              
             </div>
           ))}
         </div>
 
-        {/* Closing Statement */}
-        <div className="mt-16 sm:mt-20 text-center">
-          <div className=" p-6 sm:p-8  rounded-2xl sm:rounded-3xl max-w-xs sm:max-w-2xl md:max-w-3xl mx-auto shadow-xl border-2 border-yellow-500">
-            <p className="text-lg sm:text-2xl md:text-3xl font-bold text-black mb-3 sm:mb-4">
-              These values are not just words on a page.
-            </p>
-            <p className="text-base sm:text-xl md:text-2xl font-bold text-black">
-              They are the foundation of everything we build.
-            </p>
+        {/* Enhanced Closing Statement */}
+        <div className="mt-16 sm:mt-20 text-center relative">
+          <div className="relative p-8 sm:p-12 rounded-3xl max-w-4xl mx-auto bg-gradient-to-r from-white/80 to-yellow-50/80 border border-yellow-500/50 shadow-xl backdrop-blur-sm">
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-yellow-500/5 to-yellow-600/5"></div>
+            <div className="relative z-10">
+              <p className="text-xl sm:text-2xl md:text-3xl font-black text-black mb-4 sm:mb-6 relative">
+                These values are not just words on a page.
+              </p>
+              <p className="text-lg sm:text-xl md:text-2xl font-bold text-black/90">
+                They are the foundation of everything we build.
+              </p>
+            </div>
           </div>
         </div>
       </div>

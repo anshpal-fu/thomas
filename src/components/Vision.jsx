@@ -27,10 +27,10 @@ export default function Vision() {
           <div className="space-y-6">
             <h3 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 bg-clip-text text-transparent mb-4">TRANSFORMATIVE EDUCATION</h3>
             <p className="text-lg text-gray-300 leading-relaxed">
-              We believe in real, boots-on-the-ground strategies that produce tangible results. Our programs are designed to awaken your potential and align you with your highest vision.
+              We are passionate on supporting our clients secure business funding with NO personal guarantees. Global Generational Wealth is a team of professionals who help people with credit issuer & lender approval requirements. Instead of running in a loop with manual underwriting reviews we help you get started with the right structure for generational success! 
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Through hands-on guidance and mentorship, we provide the tools and frameworks necessary to build lasting wealth and impact across generations.
+              Real Reliable & Ready, worthy of credits Profile! 
             </p>
           </div>
           <div className="relative">
@@ -51,7 +51,7 @@ export default function Vision() {
           <blockquote className="text-2xl sm:text-3xl font-bold text-center italic leading-relaxed">
             "We're not just teaching skills — we're transforming mindsets, building character, and creating leaders who will leave stains on brains and footprints on this earth."
           </blockquote>
-          <cite className="block text-right mt-6 text-black font-bold">— Thomas John Hong</cite>
+          
         </div>
 
         {/* Core Principles */}

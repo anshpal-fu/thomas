@@ -9,49 +9,31 @@ export default function Services() {
     {
       title: "1-on-1 Consulting Session",
       price: "$99",
-      description: "Personalized strategy session to identify your unique path to generational wealth",
+      description: "Personalized strategy session to identify your unique path to Generational Wealth.",
       features: [
-        "60-minute intensive consultation",
-        "Personalized wealth assessment",
-        "Immediate action plan",
-        "Q&A with Thomas John Hong"
+        "60 minute consultation",
+        "1 on 1 with a professional",
+        "Action plan",
+        "Personalized wealth assignment"
       ],
       cta: "Book Session",
       id: "consulting",
       backgroundImage: "/download (2).jpg"
     },
     {
-      title: "Transfiguration Package",
+      title: "WORTHY OF CREDIT PROFILE / Business TRUST",
       price: "$3,333",
-      description: "Comprehensive transformation program for complete life and business overhaul",
+      description: "Professional credit profile to unlock credits through the system.",
       features: [
-        "3-month intensive program",
-        "Weekly 1-on-1 sessions",
-        "Personalized strategy development",
-        "Accountability and progress tracking",
-        "Resource library access",
-        "Community access"
+        "EIN & Set-up Assistance",
+        "Business Address",
+        "Business Phone Number",
+        "Professional Website & Email",
+        "Business Bank Account Assistance"
       ],
-      cta: "Transform Now",
-      id: "transfiguration",
+      cta: "Get Credit Profile",
+      id: "credit-profile",
       backgroundImage: "/Accredited leadership pathways that actually work.jpg"
-    },
-    {
-      title: "3-Month Mastery Immersion",
-      price: "$9,999",
-      description: "Elite mentorship program for those committed to complete mastery",
-      features: [
-        "90-day immersive experience",
-        "Daily check-ins and support",
-        "Complete business/system overhaul",
-        "Investor pitch development",
-        "Network introductions",
-        "Lifetime community access",
-        "Ongoing alumni support"
-      ],
-      cta: "Achieve Mastery",
-      id: "mastery",
-      backgroundImage: "/student-online-cute-guy-checked-shirt-with-glasses-studying-computer-looking-up.jpg"
     }
   ];
 
@@ -76,7 +58,7 @@ export default function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {services.map((service, index) => (
             <div 
               key={index} 

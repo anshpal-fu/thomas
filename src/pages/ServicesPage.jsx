@@ -12,23 +12,16 @@ export default function ServicesPage() {
       <Navbar />
       <main className="pt-20">
         <Services />
-<<<<<<< HEAD
         {/* Thin horizontal divider between sections */}
         <div className="py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="h-px bg-gradient-to-r from-transparent via-yellow-500/30 to-transparent"></div>
           </div>
         </div>
-=======
->>>>>>> f0c2d32 (Initial project commit)
         <CTA />
       </main>
       <Footer />
       <ScrollToTop />
     </div>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f0c2d32 (Initial project commit)

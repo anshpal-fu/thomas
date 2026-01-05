@@ -36,19 +36,27 @@ export default function About() {
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <span className="text-[var(--gold)] mr-2">•</span>
-                    <span>Hands-on guidance and mentorship</span>
+                    <span>Get approved for HIGH-Limit revolving credit cards in your Business Name with NO PERSONAL GUARANTEES</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-[var(--gold)] mr-2">•</span>
-                    <span>Real-world strategies, no shortcuts</span>
+                    <span>Access credit sources to get vendor credit, retail credit, service credits & Business credit cards LINKED TO YOUR EIN</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-[var(--gold)] mr-2">•</span>
-                    <span>Personalized approach to wealth building</span>
+                    <span>Get a business credit profile QUICKY set up & activated with D&B # saving you time & money</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-[var(--gold)] mr-2">•</span>
-                    <span>Focus on long-term generational impact</span>
+                    <span>Receive coaching & services with a business advisor who will help you EASILY navigate the corporate credit building process</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[var(--gold)] mr-2">•</span>
+                    <span>BEREAU INSIGHTS See the same comprehensive report lenders & underwriters look at when making lending decisions</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[var(--gold)] mr-2">•</span>
+                    <span>Unincorporated compliance review to ensure your business exceeds credit issuer & lender FUNDABILITY STANDARDS to get automated approvals</span>
                   </li>
                 </ul>
               </div>
