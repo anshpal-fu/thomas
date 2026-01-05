@@ -30,8 +30,8 @@ export default function Contact() {
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Email</h3>
-                    <a href="mailto:thomasjohnhong@globalgenerationalwealth.net" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300">
-                      thomas@globalgenerationalwealth.net
+                    <a href="mailto:globalgenerationalwealth3@gmail.com" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300">
+                      globalgenerationalwealth3@gmail.com
                     </a>
                   </div>
                   
