@@ -15,6 +15,7 @@
     --gray-700: #2A2A2A;
   }
 
+<<<<<<< HEAD
   /* Custom color classes */
   .text-gold {
     color: var(--gold);
@@ -39,6 +40,9 @@
   .bg-gold-dark {
     background-color: var(--gold-dark);
   }
+=======
+
+>>>>>>> f0c2d32 (Initial project commit)
 
   *,
   *::before,
@@ -211,4 +215,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shimmer 3s linear infinite;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f0c2d32 (Initial project commit)
