@@ -44,8 +44,8 @@ export default function Footer() {
             <div className="space-y-3 text-sm">
               <div className="group">
                 <p className="text-gray-500 text-xs mb-1 uppercase tracking-wide">Email</p>
-                <a href="mailto:thomasjohnhong@globalgenerationalwealth.net" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 block leading-relaxed">
-                  thomas@globalgenerationalwealth.net
+                <a href="mailto:globalgenerationalwealth3@gmail.com" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 block leading-relaxed">
+                  globalgenerationalwealth3@gmail.com
                 </a>
               </div>
               <div className="pt-2">

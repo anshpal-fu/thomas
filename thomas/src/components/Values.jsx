@@ -76,7 +76,7 @@ export default function Values() {
               </p>
               
               {/* Text indicator */}
-              <p className="text-xs text-gray-500 mt-1">Text</p>
+              
             </div>
           ))}
         </div>

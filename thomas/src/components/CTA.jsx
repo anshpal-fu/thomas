@@ -32,7 +32,7 @@ export default function CTA() {
               Explore Services
             </a>
             <a 
-              href="mailto:thomasjohnhong@globalgenerationalwealth.net" 
+              href="mailto:globalgenerationalwealth3@gmail.com" 
               className="px-8 py-4 bg-gradient-to-r from-gray-800 to-black text-white font-bold text-lg uppercase tracking-wider transition-all duration-300 hover:from-black hover:to-gray-900 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Contact Us
