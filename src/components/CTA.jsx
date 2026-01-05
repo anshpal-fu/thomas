@@ -1,8 +1,6 @@
 import React from 'react';
-import { useTheme } from '../contexts/ThemeContext';
 
 export default function CTA() {
-  const { theme } = useTheme();
   
   return (
     <section className="py-8 sm:py-12 px-4 sm:px-6 bg-gradient-to-r from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-dark)] text-black relative overflow-hidden rounded-3xl">

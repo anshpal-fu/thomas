@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { useTheme } from '../contexts/ThemeContext';
 
 export default function Footer() {
-  const { theme } = useTheme();
   const [showModal, setShowModal] = useState(null);
 
   const openModal = (modalType) => {
