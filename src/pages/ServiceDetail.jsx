@@ -9,54 +9,31 @@ const services = [
   {
     id: "consulting",
     price: "$99",
-    title: "1 ON 1 CONSULTING SESSION",
-    desc: "A direct clarity session designed to identify, correct, and elevate.",
+    title: "1-on-1 Consulting Session",
+    desc: "Personalized strategy session to identify your unique path to Generational Wealth.",
     includes: [
-      "Full vision discovery (goals, purpose, mission)",
-      "Identification of hidden liabilities",
-      "Weakness confrontation with actionable solutions",
-      "Blueprint for immediate next steps",
-      "Personal optimization recommendations",
-      "Documented notes & action list"
+      "60 minute consultation",
+      "1 on 1 with a professional",
+      "Action plan",
+      "Personalized wealth assignment"
     ],
-    purpose: "This tier is for realignment, direction, and activation.",
+    purpose: "Perfect for individuals seeking immediate clarity and direction.",
     details: "Our 1-on-1 Consulting Session is designed for individuals seeking immediate clarity and direction. During this intensive session, we dive deep into your current situation, identify blind spots, and create a personalized roadmap for your next steps. This is perfect for those who are ready to take action but need expert guidance to move forward effectively."
   },
   {
-    id: "transfiguration",
+    id: "credit-profile",
     price: "$3,333",
-    title: "PUBLIC → PRIVATE TRANSFIGURATION",
-    desc: "A full restructuring of identity, health, and financial foundation.",
+    title: "WORTHY OF CREDIT PROFILE / Business TRUST",
+    desc: "Professional credit profile to unlock credits through the system.",
     includes: [
-      "Public-to-Private Transfiguration Process",
-      "Formation of UBA / Business Trust",
-      "EIN creation & verification",
-      "Credit repair (public & private strategy)",
-      "Customized health routine",
-      "3 private strategy consultations"
+      "EIN & Set-up Assistance",
+      "Business Address",
+      "Business Phone Number",
+      "Professional Website & Email",
+      "Business Bank Account Assistance"
     ],
-    purpose: "This tier creates your foundation, your identity, and your private structure.",
-    popular: false,
-    details: "The Public → Private Transfiguration package is a comprehensive transformation program that restructures your entire foundation. We guide you through the process of moving from a public identity to a private one, establishing legal structures, rebuilding credit, and optimizing your health. This package is ideal for those serious about creating a solid base for long-term wealth building."
-  },
-  {
-    id: "mastery",
-    price: "$9,999",
-    title: "MASTERY IMMERSION (3 MONTHS)",
-    desc: "Complete, hands-on, transformative program to reset your entire life.",
-    includes: [
-      "3-month mentorship & hand-holding",
-      "Weekly accountability check-ins",
-      "Private network introductions",
-      "UNLIMITED Credits (within capacity)",
-      "Full credit reconstruction",
-      "Debt discharge/negotiation guidance",
-      "Weekly 1-on-1 sessions",
-      "Priority messaging support"
-    ],
-    purpose: "Complete transformation — financially, mentally, emotionally, structurally.",
-    popular: true,
-    details: "The Mastery Immersion is our most comprehensive program, designed for those committed to complete transformation. Over three months, you'll receive intensive mentorship, weekly check-ins, and unlimited support as you rebuild your financial foundation, optimize your health, and develop the mindset of a master. This program includes access to our private network and priority support throughout your journey."
+    purpose: "Establish your business foundation and credit profile.",
+    details: "The WORTHY OF CREDIT PROFILE / Business TRUST package helps you establish a professional credit profile to unlock credits through the system. We guide you through the process of creating your business foundation with proper setup, addresses, and banking to support your credit building journey."
   }
 ];
 
@@ -144,11 +121,6 @@ export default function ServiceDetail() {
               <div className="text-center mb-8">
                 <div className="text-5xl font-black gradient-text mb-4">{service.price}</div>
                 <h3 className="text-2xl font-bold text-white mb-2">{service.title}</h3>
-                {service.popular && (
-                  <div className="inline-block bg-gradient-to-r from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-dark)] text-black px-4 py-1 text-xs font-black tracking-widest animate-glow mt-2">
-                    MOST TRANSFORMATIVE
-                  </div>
-                )}
               </div>
               
               <button className="w-full py-4 bg-gradient-to-r from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-dark)] text-black font-bold hover:from-[var(--gold)] hover:via-[var(--gold-light)] hover:to-[var(--gold)] transition-all duration-500 uppercase tracking-wider shadow-lg hover:shadow-[var(--gold)]/50 mb-4">
