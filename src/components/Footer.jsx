@@ -41,9 +41,13 @@ export default function Footer() {
             <h4 className="text-white font-black mb-5 text-base tracking-wider uppercase border-b border-[var(--gold)]/20 pb-2">Contact Us</h4>
             <div className="space-y-3 text-sm">
               <div className="group">
-                <p className="text-gray-500 text-xs mb-1 uppercase tracking-wide">Email</p>
-                <a href="mailto:globalgenerationalwealth3@gmail.com" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 block leading-relaxed">
-                  globalgenerationalwealth3@gmail.com
+                <p className="text-gray-500 text-xs mb-1 uppercase tracking-wide flex items-center space-x-1">
+                  <span className="text-blue-500">💼</span>
+                  <span>LinkedIn</span>
+                </p>
+                <a href="https://www.linkedin.com/in/tommy-hong-9963063a5/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 block leading-relaxed flex items-center space-x-1">
+                  <span className="text-blue-500">🔗</span>
+                  <span>Tommy Hong</span>
                 </a>
               </div>
               <div className="pt-2">

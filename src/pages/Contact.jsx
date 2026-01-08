@@ -29,9 +29,13 @@ export default function Contact() {
                 
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Email</h3>
-                    <a href="mailto:globalgenerationalwealth3@gmail.com" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300">
-                      globalgenerationalwealth3@gmail.com
+                    <h3 className="text-lg font-semibold mb-2 flex items-center space-x-2">
+                      <span className="text-blue-500">💼</span>
+                      <span>LinkedIn</span>
+                    </h3>
+                    <a href="https://www.linkedin.com/in/tommy-hong-9963063a5/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 flex items-center space-x-2">
+                      <span className="text-blue-500">🔗</span>
+                      <span>Tommy Hong</span>
                     </a>
                   </div>
                   
