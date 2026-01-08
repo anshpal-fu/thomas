@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useTheme } from '../contexts/ThemeContext';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -123,13 +123,13 @@ export default function ServiceDetail() {
                 <h3 className="text-2xl font-bold text-white mb-2">{service.title}</h3>
               </div>
               
-              <button className="w-full py-4 bg-gradient-to-r from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-dark)] text-black font-bold hover:from-[var(--gold)] hover:via-[var(--gold-light)] hover:to-[var(--gold)] transition-all duration-500 uppercase tracking-wider shadow-lg hover:shadow-[var(--gold)]/50 mb-4">
+              <Link to="/contact" className="block w-full py-4 bg-gradient-to-r from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-dark)] text-black font-bold hover:from-[var(--gold)] hover:via-[var(--gold-light)] hover:to-[var(--gold)] transition-all duration-500 uppercase tracking-wider shadow-lg hover:shadow-[var(--gold)]/50 mb-4 text-center">
                 Enroll Now
-              </button>
+              </Link>
               
-              <button className="w-full py-4 bg-gradient-to-r from-black via-[var(--gray-900)] to-black border-2 border-[var(--gold)]/30 text-[var(--gold)] hover:bg-gradient-to-r hover:from-[var(--gold-dark)] hover:via-[var(--gold)] hover:to-[var(--gold-dark)] hover:text-black hover:border-[var(--gold)] transition-all duration-500 font-bold uppercase tracking-wider">
+              <Link to="/contact" className="block w-full py-4 bg-gradient-to-r from-black via-[var(--gray-900)] to-black border-2 border-[var(--gold)]/30 text-[var(--gold)] hover:bg-gradient-to-r hover:from-[var(--gold-dark)] hover:via-[var(--gold)] hover:to-[var(--gold-dark)] hover:text-black hover:border-[var(--gold)] transition-all duration-500 font-bold uppercase tracking-wider text-center">
                 Schedule Call
-              </button>
+              </Link>
               
               <div className="mt-8 pt-6 border-t border-[var(--gold)]/30">
                 <h4 className="text-sm font-bold text-[var(--gold)] mb-3 uppercase tracking-wider">Secure Payment</h4>

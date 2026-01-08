@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function CTA() {
   
@@ -23,18 +24,18 @@ export default function CTA() {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <a 
-              href="#services" 
+            <Link 
+              to="/services" 
               className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold text-lg uppercase tracking-wider transition-all duration-300 hover:from-yellow-600 hover:to-yellow-700 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Explore Services
-            </a>
-            <a 
-              href="mailto:globalgenerationalwealth3@gmail.com" 
+            </Link>
+            <Link 
+              to="/contact" 
               className="px-8 py-4 bg-gradient-to-r from-gray-800 to-black text-white font-bold text-lg uppercase tracking-wider transition-all duration-300 hover:from-black hover:to-gray-900 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>
