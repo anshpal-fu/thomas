@@ -20,7 +20,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-12 sm:mb-16">
+        <div className="grid grid-cols-1 gap-8 mb-12 sm:mb-16">
           {/* Brand Section */}
           <div className="space-y-5 animate-fadeInUp">
             <div className="mb-6">

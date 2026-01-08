@@ -86,23 +86,23 @@ export default function ServiceDetail() {
         </div>
         
         {/* Main Content */}
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 gap-8">
           {/* Service Details */}
-          <div className="lg:col-span-2">
-            <div className="bg-gradient-to-br from-black/90 via-[var(--gray-900)]/80 to-black/90 border border-[var(--gold)]/30 rounded-2xl p-8 mb-8">
+          <div className="w-full">
+            <div className="bg-gradient-to-br from-black/90 via-[var(--gray-900)]/80 to-black/90 border border-[var(--gold)]/30 rounded-2xl p-6 mb-8">
               <h2 className="text-2xl font-bold text-white mb-6">Program Details</h2>
               <p className="text-gray-300 leading-relaxed text-lg">
                 {service.details}
               </p>
             </div>
             
-            <div className="bg-gradient-to-br from-black/90 via-[var(--gray-900)]/80 to-black/90 border border-[var(--gold)]/30 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-black/90 via-[var(--gray-900)]/80 to-black/90 border border-[var(--gold)]/30 rounded-2xl p-6 mb-8">
               <h2 className="text-2xl font-bold text-white mb-6">What's Included</h2>
               <ul className="space-y-4">
                 {service.includes.map((item, index) => (
                   <li key={index} className="flex items-start">
-                    <span className="text-[var(--gold)] mr-3 text-xl">✓</span>
-                    <span className="text-gray-300">{item}</span>
+                  <span className="text-[var(--gold)] mr-3 text-xl">✓</span>
+                  <span className="text-gray-300">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -115,9 +115,9 @@ export default function ServiceDetail() {
             </div>
           </div>
           
-          {/* Payment Sidebar */}
-          <div className="lg:col-span-1">
-            <div className="sticky top-32 bg-gradient-to-br from-black/90 via-[var(--gray-900)]/80 to-black/90 border-2 border-[var(--gold)] rounded-2xl p-8">
+          {/* Payment Section - now stacked on mobile */}
+          <div className="w-full">
+            <div className="bg-gradient-to-br from-black/90 via-[var(--gray-900)]/80 to-black/90 border-2 border-[var(--gold)] rounded-2xl p-6">
               <div className="text-center mb-8">
                 <div className="text-5xl font-black gradient-text mb-4">{service.price}</div>
                 <h3 className="text-2xl font-bold text-white mb-2">{service.title}</h3>
