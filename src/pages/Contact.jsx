@@ -17,7 +17,7 @@ export default function Contact() {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Information */}
               <div className="bg-gray-800/50 p-8 rounded-xl border border-[var(--gold)]/20 backdrop-blur-sm">
                 <h2 className="text-2xl font-bold mb-6 text-[var(--gold)]">Get In Touch</h2>
@@ -29,13 +29,9 @@ export default function Contact() {
                 
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-lg font-semibold mb-2 flex items-center space-x-2">
-                      <span className="text-blue-500">💼</span>
-                      <span>LinkedIn</span>
-                    </h3>
-                    <a href="https://www.linkedin.com/in/tommy-hong-9963063a5/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 flex items-center space-x-2">
-                      <span className="text-blue-500">🔗</span>
-                      <span>Tommy Hong</span>
+                    <h3 className="text-lg font-semibold mb-2">LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/tommy-hong-9963063a5/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300">
+                      Tommy Hong
                     </a>
                   </div>
                   
@@ -49,21 +45,14 @@ export default function Contact() {
                   </div>
                   
                   <div>
-                    <h3 className="text-lg font-semibold mb-2 flex items-center space-x-2">
-                      <span className="text-blue-500">📞</span>
-                      <span>Phone</span>
-                    </h3>
-                    <a href="tel:+18886876829" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 flex items-center space-x-2">
-                      <span className="text-blue-500">📱</span>
-                      <span>(888) 687-6829</span>
+                    <h3 className="text-lg font-semibold mb-2">Phone</h3>
+                    <a href="tel:+18886876829" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300">
+                      (888) 687-6829
                     </a>
                   </div>
                   
                   <div>
-                    <h3 className="text-lg font-semibold mb-2 flex items-center space-x-2">
-                      <span className="text-blue-500">🕒</span>
-                      <span>Business Hours</span>
-                    </h3>
+                    <h3 className="text-lg font-semibold mb-2">Business Hours</h3>
                     <p className="text-gray-300">
                       11am - 7pm (Mountain Time)<br />
                       Monday - Saturday

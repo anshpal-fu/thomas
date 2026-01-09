@@ -20,7 +20,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-        <div className="grid grid-cols-1 gap-8 mb-12 sm:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-12 sm:mb-16">
           {/* Brand Section */}
           <div className="space-y-5 animate-fadeInUp">
             <div className="mb-6">
@@ -41,13 +41,9 @@ export default function Footer() {
             <h4 className="text-white font-black mb-5 text-base tracking-wider uppercase border-b border-[var(--gold)]/20 pb-2">Contact Us</h4>
             <div className="space-y-3 text-sm">
               <div className="group">
-                <p className="text-gray-500 text-xs mb-1 uppercase tracking-wide flex items-center space-x-1">
-                  <span className="text-blue-500">💼</span>
-                  <span>LinkedIn</span>
-                </p>
-                <a href="https://www.linkedin.com/in/tommy-hong-9963063a5/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 block leading-relaxed flex items-center space-x-1">
-                  <span className="text-blue-500">🔗</span>
-                  <span>Tommy Hong</span>
+                <p className="text-gray-500 text-xs mb-1 uppercase tracking-wide">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/tommy-hong-9963063a5/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 block leading-relaxed">
+                  Tommy Hong
                 </a>
               </div>
               <div className="pt-2">
@@ -58,21 +54,14 @@ export default function Footer() {
               </div>
               
               <div className="pt-2">
-                <p className="text-gray-500 text-xs mb-1 uppercase tracking-wide flex items-center space-x-1">
-                  <span className="text-blue-500">📞</span>
-                  <span>Phone</span>
-                </p>
-                <a href="tel:+18886876829" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 block leading-relaxed flex items-center space-x-1">
-                  <span className="text-blue-500">📱</span>
-                  <span>(888) 687-6829</span>
+                <p className="text-gray-500 text-xs mb-1 uppercase tracking-wide">Phone</p>
+                <a href="tel:+18886876829" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 block leading-relaxed">
+                  (888) 687-6829
                 </a>
               </div>
               
               <div className="pt-2">
-                <p className="text-gray-500 text-xs mb-1 uppercase tracking-wide flex items-center space-x-1">
-                  <span className="text-blue-500">🕒</span>
-                  <span>Business Hours</span>
-                </p>
+                <p className="text-gray-500 text-xs mb-1 uppercase tracking-wide">Business Hours</p>
                 <p className="text-gray-300 leading-relaxed">
                   11am - 7pm (Mountain Time)<br />
                   Monday - Saturday
