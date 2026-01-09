@@ -56,6 +56,28 @@ export default function Footer() {
                 <p className="text-gray-300">Seattle, WA 98104</p>
                 <p className="text-gray-300">United States</p>
               </div>
+              
+              <div className="pt-2">
+                <p className="text-gray-500 text-xs mb-1 uppercase tracking-wide flex items-center space-x-1">
+                  <span className="text-blue-500">📞</span>
+                  <span>Phone</span>
+                </p>
+                <a href="tel:+18886876829" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 block leading-relaxed flex items-center space-x-1">
+                  <span className="text-blue-500">📱</span>
+                  <span>(888) 687-6829</span>
+                </a>
+              </div>
+              
+              <div className="pt-2">
+                <p className="text-gray-500 text-xs mb-1 uppercase tracking-wide flex items-center space-x-1">
+                  <span className="text-blue-500">🕒</span>
+                  <span>Business Hours</span>
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  11am - 7pm (Mountain Time)<br />
+                  Monday - Saturday
+                </p>
+              </div>
             </div>
           </div>
 

@@ -49,6 +49,28 @@ export default function Contact() {
                   </div>
                   
                   <div>
+                    <h3 className="text-lg font-semibold mb-2 flex items-center space-x-2">
+                      <span className="text-blue-500">📞</span>
+                      <span>Phone</span>
+                    </h3>
+                    <a href="tel:+18886876829" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 flex items-center space-x-2">
+                      <span className="text-blue-500">📱</span>
+                      <span>(888) 687-6829</span>
+                    </a>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2 flex items-center space-x-2">
+                      <span className="text-blue-500">🕒</span>
+                      <span>Business Hours</span>
+                    </h3>
+                    <p className="text-gray-300">
+                      11am - 7pm (Mountain Time)<br />
+                      Monday - Saturday
+                    </p>
+                  </div>
+                  
+                  <div>
                     <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
                     <div className="flex space-x-4">
                       <a href="http://www.youtube.com/@GLOBALGENERATIONALWEALTH" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[var(--gold)] transition-colors duration-300 flex items-center space-x-2">
